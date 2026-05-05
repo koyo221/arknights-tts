@@ -1,0 +1,23 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Dialog]
+[Character]
+[PlayMusic(intro="$test_intro", key="$test_loop", volume=0.8)]
+[Background(image="bg_test", fadetime=1)]
+[Delay(time=1)]
+[name="アーミヤ"]  ドクター、起きてください。
+[name="アーミヤ"]  時間がありません。
+[Subtitle(text="ロドス・アイランド", x=200, y=360, alignment="left", size=24, delay=0.04, width=1280)]
+[Subtitle]
+[name="ケルシー"]  状況は良くない。
+[Decision(options="どうする？;静観する;すぐ動く", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="アーミヤ"]  決断してください、Dr.{@nickname}。
+[Blocker(a=1, fadetime=0.6)]
+[name="？？？"]  ……何者だ？
+[name="兵士A"]  止まれ！
+[multiline(name="ホルン")] ふふ、奇遇ね。
+[multiline(name="ホルン", end=true)] こんなところで会うなんて。
+[Subtitle(text="お前は知るだろう。全身全霊を捧げた大地が、そんなお前を必要としていないことを。", x=200, y=360)]
+[Subtitle]
+何者かが暗闇に消えていった。
+[name="アーミヤ？"]  ……今のは何だったんだろう？
