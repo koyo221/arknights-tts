@@ -1,0 +1,42 @@
+[project]
+name = "arknights-tts"
+version = "0.1.0"
+description = "Personal Arknights main story audiobook pipeline using VOICEVOX"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["arknights", "tts", "voicevox", "audiobook"]
+authors = [
+    { name = "koyo", email = "koyodev221@gmail.com" }
+]
+requires-python = ">=3.11"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+dependencies = [
+    "click>=8.1",
+    "questionary>=2.0",
+    "rich>=13.0",
+    "requests>=2.31",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+arknights-tts = "arknights_tts.main:cli"
+
+[build-system]
+requires = ["uv_build>=0.11.8,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
