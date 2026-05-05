@@ -1,0 +1,20 @@
+{
+  "engine": "voicevox",
+  "engine_url": "http://127.0.0.1:50021",
+  "speaker_name": "東北きりたん",
+  "style_id": 108,
+  "style": {
+    "speedScale": 1.0,
+    "pitchScale": 0.0,
+    "intonationScale": 1.0,
+    "volumeScale": 1.0
+  },
+  "pacing_ms": {
+    "same_speaker": 500,
+    "speaker_switch": 600,
+    "narration_dialogue": 750,
+    "scene": 1500,
+    "beg_end": 2500,
+    "stage_gap": 4500
+  }
+}
