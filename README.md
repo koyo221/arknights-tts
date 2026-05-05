@@ -1,5 +1,7 @@
 # arknights-tts
 
+> ⚠️ **vibe-coded**: このプロジェクトは Claude を使って勢いで書かれており、十分な検証を経ていないバグを含む可能性があります。動作保証はありません。issues / PR は歓迎ですが、作者が個人プロジェクトとして対応できる範囲で見ます。
+
 アークナイツ（Yostar 日本版）のメインストーリーを VOICEVOX で読み上げて、章ごとの **M4B（オーディオブック）+ SRT** にするツールです。
 
 本文データは [Kengxxiao/ArknightsGameData_YoStar](https://github.com/Kengxxiao/ArknightsGameData_YoStar)（2025-12-25 にアーカイブされ read-only）から取得します。アーカイブ時点で **序章〜第 15 章まで対応**。それ以降に追加された章には未対応です。
